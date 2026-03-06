@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #eee;
+}
+
+header {
+  padding: 15px;
+  background-color: #0d1b2a;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1b263b;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #eee;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: #66fcf1;
+}
+
+.section {
+  display: none;
+  padding: 20px;
+}
+
+.section.active {
+  display: block;
+}
+
+.chat {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #333;
+  padding: 10px;
+  margin-bottom: 10px;
+}

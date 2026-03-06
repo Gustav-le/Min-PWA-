@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leveo</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1 style="color:#1f4ed8;">Leveo</h1>
+</header>
+
+<nav>
+  <button onclick="showSection('planering')">Planering</button>
+  <button onclick="showSection('mat')">Mat</button>
+  <button onclick="showSection('traning')">Träning</button>
+  <button onclick="showSection('ekonomi')">Ekonomi</button>
+  <button onclick="showSection('studier')">Studier</button>
+  <button onclick="showSection('stod')">Stöd AI</button>
+  <button onclick="showSection('betalning')">+ Version</button>
+</nav>
+
+<main>
+  <section id="planering" class="section active">
+    <h2>Vardagsplanering</h2>
+    <input type="text" id="planInput" placeholder="Lägg till uppgift">
+    <button onclick="addPlan()">Lägg till</button>
+    <ul id="planList"></ul>
+  </section>
+
+  <section id="mat" class="section"><h2>Mat</h2><p>Kommer snart...</p></section>
+  <section id="traning" class="section"><h2>Träning</h2><p>Kommer snart...</p></section>
+  <section id="ekonomi" class="section"><h2>Ekonomi</h2><p>Kommer snart...</p></section>
+  <section id="studier" class="section"><h2>Studier</h2><p>Kommer snart...</p></section>
+
+  <section id="stod" class="section">
+    <h2>Stöd AI</h2>
+    <div id="chatContainer" class="chat"></div>
+    <input type="text" id="chatInput" placeholder="Skriv till AI">
+    <button onclick="sendMessage()">Skicka</button>
+  </section>
+
+  <section id="betalning" class="section">
+    <h2>+ Version</h2>
+    <p>Premiumfunktioner låsta</p>
+    <button onclick="payPremium()">Bli + medlem</button>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
